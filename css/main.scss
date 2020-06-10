@@ -1,0 +1,503 @@
+// @import '../node_modules/rfs/scss.scss';
+
+@font-face {
+  font-family: ProximaBold;
+  src: url(./proximanova/Bold.otf);
+}
+@font-face {
+  font-family: ProximaExtraBold;
+  src: url(./proximanova/Extrabold.otf);
+}
+
+@font-face {
+  font-family: ProximaRegular;
+  src: url(./proximanova/Regular.ttf);
+}
+
+@font-face {
+  font-family: ProximaSemiBold;
+  src: url(./proximanova/Semibold.otf);
+}
+
+$PNBold: "ProximaBold";
+$PNSemiBold: "ProximaSemiBold";
+$PNRegular: "ProximaRegular";
+$PNExtraBold: "ProximaBold";
+
+$dot-size: 5px;
+$dot-space: 85px;
+
+$bgcolour1: #ffffff;
+$dotcolour: #ced7dd;
+$bgcolour2: #f3f6f7;
+
+$mango: #ffaa34;
+$font-color: #333333;
+.container {
+  max-width: 1336px;
+}
+.segment1 {
+  background: linear-gradient(
+        90deg,
+        $bgcolour2 ($dot-space - $dot-size),
+        transparent 1%
+      )
+      center,
+    linear-gradient($bgcolour2 ($dot-space - $dot-size), transparent 1%) center,
+    $dotcolour;
+  background-size: $dot-space $dot-space;
+  .navbar-brand {
+    padding-top: 3rem !important;
+    height: auto !important;
+    max-width: 100% !important;
+    border: none;
+    display: block;
+  }
+  .sygmoid-nav {
+    letter-spacing: 0;
+    font-family: ProximaSemiBold !important;
+    font-size: 1.3rem;
+    color: $font-color !important;
+    padding: 4px;
+    margin-top: 4.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    &:hover {
+      color: $mango !important;
+      border-bottom: 2px solid !important;
+    }
+  }
+  .sygmoid-nav-btn {
+    font-family: ProximaSemiBold !important;
+    background-color: $mango;
+    color: white !important;
+    height: 4rem;
+    width: 10.3rem;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    border-radius: 20px;
+    margin-top: 3.5rem;
+  }
+}
+
+.segment2 {
+  background: linear-gradient(
+        90deg,
+        $bgcolour2 ($dot-space - $dot-size),
+        transparent 1%
+      )
+      center,
+    linear-gradient($bgcolour2 ($dot-space - $dot-size), transparent 1%) center,
+    $dotcolour;
+  background-size: $dot-space $dot-space;
+  .hero-section h1 {
+    font-size: 3rem;
+    font-family: ProximaExtraBold !important;
+    color: $mango;
+    font-size: 6rem;
+  }
+  .hero-section h3 {
+    font-size: 3.6rem;
+    font-family: ProximaSemiBold !important;
+  }
+  .hero-section p {
+    font-size: 1.4rem;
+    font-family: ProximaRegular !important;
+    max-width: 40rem;
+  }
+  .hero-section {
+    padding-top: 12rem;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    padding-bottom: 12rem;
+  }
+}
+.accelerate {
+  padding: 0;
+  font-size: 5rem;
+  font-family: ProximaExtraBold !important;
+  text-align: center;
+  letter-spacing: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4.6rem;
+}
+
+.sec-section {
+  font-family: ProximaRegular;
+  font-size: 1.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: $font-color;
+  ul {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ul li {
+    display: inline-block;
+    padding: 1rem 4rem;
+    &:hover {
+      color: $mango;
+      cursor: pointer;
+    }
+  }
+}
+
+.third-section {
+  width: 90%;
+  height: auto;
+  margin: auto auto;
+  background-color: #f8f9f9;
+
+  ul {
+    padding: 0 !important;
+  }
+  .cards-1 {
+    list-style: none;
+    font-family: $PNSemiBold;
+    font-size: 1.4rem;
+    padding: 2.8rem 4.7rem 2.8rem 1.4rem;
+    max-width: 40rem;
+    height: 10rem;
+    color: $font-color;
+    border: 1px solid #e0e7ea;
+    background-color: white;
+    &:hover {
+      font-family: $PNBold;
+      color: #0a6cf4;
+      box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.08);
+      border: 0;
+      cursor: pointer;
+    }
+  }
+  .image-container {
+    width: 95%;
+    height: 34.1rem;
+    background-color: white;
+    margin: 5rem 1rem 4.7rem 1rem;
+    box-shadow: 10px 17px 24px 0px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.transform {
+  font-family: $PNExtraBold;
+  font-size: 5rem;
+  position: relative;
+  margin: 9rem auto 3rem 6rem;
+}
+
+.forth-section {
+  padding-bottom: 12rem;
+  ul li {
+    display: inline;
+    font-family: $PNRegular;
+    font-size: 1.4rem;
+    margin: 0 2rem 0 2rem;
+    padding-bottom: 1.4rem;
+    color: #666666;
+    &:hover {
+      color: #0a6cf4;
+      font-family: $PNBold;
+      border-bottom: 2px solid #0a6cf4;
+      cursor: pointer;
+    }
+  }
+  .cards-2 {
+    list-style: none;
+    width: 85%;
+    display: inline-block;
+    text-align: center;
+    height: 5.8rem;
+    padding-top: 2.4rem;
+    margin-left: 5.8rem;
+    background-color: white;
+    box-shadow: 0px 11px 14px 0px rgba(0, 0, 0, 0.08);
+  }
+  .txt1 {
+    font-family: $PNRegular;
+    font-size: 1.6rem;
+    color: #333333;
+    max-width: 50rem;
+    height: 5rem;
+    margin-left: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .txt2 {
+    display: block;
+    font-size: 1.6rem;
+    color: #333333;
+    font-family: $PNRegular;
+    margin-left: 7rem;
+    line-height: 3.4rem;
+    .whole1 {
+      margin-bottom: 2rem;
+    }
+  }
+  .image-container2 {
+    height: 35rem;
+    width: 85%;
+    margin: 0 auto 0 4rem;
+    background-color: white;
+    box-shadow: 0px 11px 14px 0px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.fifth-sec {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  background-color: #f8f9f9;
+  .head {
+    margin-top: 6rem;
+    margin-bottom: 1.3rem;
+    font-size: 5rem;
+    font-family: ProximaExtraBold;
+    text-align: center;
+    max-width: 89rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.4rem;
+  }
+  ul {
+    display: inline;
+    padding: 0;
+  }
+  ul li {
+    display: inline-block;
+    text-align: center;
+    font-family: $PNRegular;
+    font-size: 1.4rem;
+    padding: 0 1rem 1.1rem;
+    color: #666666;
+    &:hover {
+      color: #0a6cf4;
+      font-family: $PNBold;
+      border-bottom: 2px solid #0a6cf4;
+      cursor: pointer;
+    }
+  }
+  .cards-3 {
+    display: inline;
+    list-style: none;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.4rem;
+    padding-bottom: 1.4rem;
+    background-color: white;
+    box-shadow: 0px 11px 14px 0px rgba(0, 0, 0, 0.08);
+  }
+  .image-container3 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 57.7rem;
+    margin-top: 5.5rem;
+    background-color: white;
+    box-shadow: 0px 11px 14px 0px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.sixth-sec {
+  padding-top: 9rem;
+  padding-bottom: 3rem;
+  .adopt {
+    font-size: 5rem;
+    font-family: ProximaExtraBold;
+    margin-left: 7.8rem;
+  }
+  ul li {
+    margin-left: 7rem;
+    margin-right: auto;
+    padding: 0 2rem;
+    list-style: none;
+    font-size: 1.4rem;
+    font-family: ProximaSemiBold;
+    line-height: 6rem;
+    color: #333333;
+    &:hover {
+      width: 30rem;
+      height: auto;
+      padding: 0 2rem;
+      background-color: #edf2ff;
+      color: #0a6cf4;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+  }
+  .part2 {
+    display: block;
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    font-family: ProximaRegular;
+    color: #333333;
+    margin: auto;
+    padding: 1rem 5rem;
+    line-height: 35px;
+  }
+  .image-container4 {
+    width: 31rem;
+    height: 18rem;
+    align-items: center;
+    margin: 13rem 0;
+    background-color: white;
+    box-shadow: 0px 11px 14px 0px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.seventh-sec {
+  background-image: url("./lappy.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .sometext {
+    font-size: 5rem;
+    font-family: ProximaExtraBold;
+    color: white;
+    padding: 13rem 8rem;
+  }
+  .cards-5 {
+    margin: 5rem auto;
+    max-width: 53.2rem;
+    height: 13rem;
+    background-color: rgba(0, 0, 0, 0.27);
+  }
+  .txt11 {
+    font-size: 2rem;
+    font-family: ProximaBold;
+    color: white;
+    padding: 2rem 2.5rem 0;
+  }
+  .txt22 {
+    max-width: 50rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-family: ProximaRegular;
+    padding: 0rem 2.5rem;
+    color: white;
+  }
+}
+
+.eight-sec {
+  .lasthead {
+    font-size: 5rem;
+    font-family: ProximaExtraBold;
+    color: $font-color;
+    padding: 9rem 0 3rem;
+    margin: 0 auto;
+  }
+  .allcards {
+    padding: 0 4rem 5rem;
+    .setcards {
+      width: 20.8rem;
+      height: 20.8rem;
+      box-shadow: 0px 2px 27px 0 rgba(0, 0, 0, 0.09);
+      margin: 1rem 2rem;
+      font-size: 2rem;
+      font-family: ProximaSemiBold;
+      border-radius: 10px;
+      color: $font-color;
+      padding: 3rem 2rem;
+      &:hover {
+        background: rgb(255, 173, 59);
+        background: linear-gradient(
+          112deg,
+          rgba(255, 173, 59, 1) 0%,
+          rgba(255, 141, 52, 1) 100%
+        );
+        color: white;
+        box-shadow: 30px 20px 54px 0 rgba(0, 0, 0, 0.09);
+        cursor: pointer;
+      }
+    }
+  }
+  .button {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 9rem;
+    font-family: ProximaBold;
+    font-size: 1.6rem;
+    width: 20rem;
+    height: 5rem;
+    background-color: $mango;
+    display: flex;
+    background-color: #ffaa34;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.ninth-sec {
+  background-color: #f8f9fa;
+  .part-1 {
+    padding: 5rem 5rem;
+    .png5 {
+      width: 100%;
+      height: auto;
+    }
+    .textbelow {
+      font-size: 1.6rem;
+      font-family: ProximaRegular;
+      color: $font-color;
+      margin: 2rem 1rem;
+    }
+    .png6 {
+      padding: 2rem 1rem;
+    }
+  }
+  .part-2 {
+    padding: 5rem 10rem;
+    .textlast {
+      font-size: 1.4rem;
+      font-family: ProximaSemiBold;
+      color: $font-color;
+      margin: 2.5rem 5rem;
+      &:hover {
+        color: $mango;
+        cursor: pointer;
+      }
+    }
+  }
+  .part-3 {
+    padding: 5rem 10rem;
+    .sometext {
+      font-size: 2rem;
+      font-family: ProximaBold;
+      color: $font-color;
+      cursor: default;
+    }
+    .address1 {
+      color: #666666;
+      font-size: 1.6rem;
+      font-family: ProximaRegular;
+      margin: 1.5rem 0;
+      cursor: default;
+    }
+    .email {
+      font-size: 1.4rem;
+      font-family: ProximaSemiBold;
+      color: #333333;
+      cursor: pointer;
+    }
+  }
+}
+
+.tenth-sec {
+  background-color: #12133e;
+  padding: 1rem 3rem 1rem;
+  .copyright {
+    font-size: 1.6rem;
+    color: white;
+    font-family: ProximaSemiBold;
+  }
+  .anotherone {
+    padding: 0 0 0 18rem;
+  }
+}
