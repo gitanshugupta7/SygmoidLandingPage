@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 600px) {
   html {
     font-size: 45% !important;
   }
@@ -54,6 +54,20 @@
     }
     .image-container4 {
       margin: auto auto;
+    }
+  }
+  .forth-section {
+    .cards-2{ margin-left: 4rem;}
+  }
+  .eight-sec{
+    .allcards{
+        margin-left: 10rem;
+        margin-right: 9rem;
+    }
+  }
+  .ninth-sec {
+    .part-2 {
+       padding: 1rem 10rem;
     }
   }
 }

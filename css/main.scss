@@ -13,7 +13,6 @@
   font-family: ProximaRegular;
   src: url(./proximanova/Regular.ttf);
 }
-
 @font-face {
   font-family: ProximaSemiBold;
   src: url(./proximanova/Semibold.otf);
@@ -135,6 +134,7 @@ $font-color: #333333;
   ul {
     margin-left: auto;
     margin-right: auto;
+    padding: 0 0;
   }
   ul li {
     display: inline-block;
@@ -171,7 +171,8 @@ $font-color: #333333;
       box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.08);
       border: 0;
       cursor: pointer;
-    }
+       }
+     
   }
   .image-container {
     width: 95%;
@@ -180,6 +181,9 @@ $font-color: #333333;
     margin: 5rem 1rem 4.7rem 1rem;
     box-shadow: 10px 17px 24px 0px rgba(0, 0, 0, 0.08);
   }
+  .arrow{
+    width: 4%;
+   }
 }
 
 .transform {
@@ -233,10 +237,13 @@ $font-color: #333333;
     font-family: $PNRegular;
     margin-left: 7rem;
     line-height: 3.4rem;
+   }
     .whole1 {
+      margin-top: 5rem;
+      padding: 2rem 1rem;
       margin-bottom: 2rem;
     }
-  }
+  
   .image-container2 {
     height: 35rem;
     width: 85%;
@@ -293,11 +300,11 @@ $font-color: #333333;
   }
   .image-container3 {
     width: 90%;
+    background-size: cover;
     margin-left: auto;
     margin-right: auto;
     height: 57.7rem;
     margin-top: 5.5rem;
-    background-color: white;
     box-shadow: 0px 11px 14px 0px rgba(0, 0, 0, 0.08);
   }
 }
