@@ -152,7 +152,11 @@
 
      </div>
      <div class="col-sm-7 ">
-           <div id = "transform_image" class="image-container2"></div>
+           <div id = "transform_image" class="image-container2">
+  
+            <a href="#" data-toggle="tooltip" title="Hooray!" data-placement="bottom" ><img class="pluslogo" src="./asset/plus.svg"</a>
+           </div>
+           
      </div>
 
    </div>
@@ -293,7 +297,11 @@
 
 </div>
 <script src="script.js"></script>
-
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
+  </script>
 
 </body>
 </html>

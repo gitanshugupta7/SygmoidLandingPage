@@ -104,7 +104,7 @@ document.getElementById("transform1").addEventListener("click", function(){
    document.getElementById("transformtxt2").textContent = "ai coe 2";
    document.getElementById("transformtxt3").textContent = "ai coe 3";
    document.getElementById("transformtxt4").textContent = "ai coe 4"; 
-   document.getElementById("transform_image").style.backgroundImage = "url('')";
+//    document.getElementById("transform_image").style.backgroundImage = "url('')";
    document.getElementById("transform1").style.color = "#0a6cf4";
    document.getElementById("transform2").style.color = "black";
    document.getElementById("transform3").style.color = "black";
@@ -125,7 +125,7 @@ document.getElementById("transform2").addEventListener("click", function(){
    document.getElementById("transformtxt2").textContent = "rpa ai 2";
    document.getElementById("transformtxt3").textContent = "rpa ai 3";
    document.getElementById("transformtxt4").textContent = "rpa ai 4"; 
-   document.getElementById("transform_image").style.backgroundImage = "url('')";
+//    document.getElementById("transform_image").style.backgroundImage = "url('')";
    document.getElementById("transform2").style.color = "#0a6cf4";
    document.getElementById("transform1").style.color = "black";
    document.getElementById("transform3").style.color = "black";
@@ -145,7 +145,7 @@ document.getElementById("transform3").addEventListener("click", function(){
    document.getElementById("transformtxt2").textContent = "business ai 2";
    document.getElementById("transformtxt3").textContent = "business ai 3";
    document.getElementById("transformtxt4").textContent = "business ai 4"; 
-   document.getElementById("transform_image").style.backgroundImage = "url('')";
+//    document.getElementById("transform_image").style.backgroundImage = "url('')";
    document.getElementById("transform3").style.color = "#0a6cf4";
    document.getElementById("transform1").style.color = "black";
    document.getElementById("transform2").style.color = "black";
@@ -253,7 +253,6 @@ document.getElementById("adoption4").addEventListener("click", function(){
     document.getElementById("adoption2").style.color = "black";
 });
 
-
-document.getElementById("service3exp").style.color = "black";
-document.getElementById("service3exp").style.boxShadow = "0px 0px 0px 0px";
-document.getElementById("service3exp").style.border = "1px solid #e0e7ea";
+document.getElementById("pluslogo").onmouseover = function(){
+    document.getElementById("plusdisplay").style.display = "inline-block";
+};
